@@ -19,7 +19,7 @@ public class BankAccount {
     // Static block to configure logger to write to a file
     static {
         try {
-            FileHandler fileHandler = new FileHandler("bank_transactions.log", true);
+            FileHandler fileHandler = new FileHandler("src/A2MultiThreadedLoggingSystem/bank_transactions.log", true);
             fileHandler.setFormatter(new SimpleFormatter());
             logger.addHandler(fileHandler);
         } catch (IOException e) {
